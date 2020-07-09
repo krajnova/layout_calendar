@@ -1,0 +1,13 @@
+@each $dayOfWeek, $dayStart in $daysOfWeek {
+  .calendar-#{$dayOfWeek} {
+    div:first-child {
+      margin-left: $dayStart * ($boxSize + $boxGap);
+    }
+  }
+}
+
+@for $i from 28 through 30 {
+  .calendar-#{$i} > div:nth-child(n + #{$i + 1}) {
+    display: none;
+  }
+}

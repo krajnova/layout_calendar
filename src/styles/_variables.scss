@@ -1,0 +1,16 @@
+$mainFontFamily: "Arial", sans-serif;
+$boxSize: 100px;
+$boxGap: 1px;
+$boxFontSize: 30px;
+$boxColor: #eee;
+$boxBorder: 1px solid #000;
+$boxColorHovered: #febfcb;
+$calendarWidth: ($boxSize + $boxGap) * 7;
+$daysOfWeek: (
+  "tue": 1,
+  "wed": 2,
+  "thu": 3,
+  "fri": 4,
+  "sat": 5,
+  "sun": 6,
+);
